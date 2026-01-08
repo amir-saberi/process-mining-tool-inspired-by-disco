@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="alpha_classic_net_1767523962.470502" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>alpha_classic_net_1767523962.470502</text>
+    </name>
+    <page id="n0">
+      <place id="({'Initial Review'}, {'Credit Check'})">
+        <name>
+          <text>({'Initial Review'}, {'Credit Check'})</text>
+        </name>
+      </place>
+      <place id="end">
+        <name>
+          <text>end</text>
+        </name>
+      </place>
+      <place id="({'Credit Check'}, {'Rejection'})">
+        <name>
+          <text>({'Credit Check'}, {'Rejection'})</text>
+        </name>
+      </place>
+      <place id="({'Submit Application'}, {'Credit Check'})">
+        <name>
+          <text>({'Submit Application'}, {'Credit Check'})</text>
+        </name>
+      </place>
+      <place id="start">
+        <name>
+          <text>start</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="({'Credit Check'}, {'Expert Review'})">
+        <name>
+          <text>({'Credit Check'}, {'Expert Review'})</text>
+        </name>
+      </place>
+      <place id="({'Initial Review'}, {'Expert Review'})">
+        <name>
+          <text>({'Initial Review'}, {'Expert Review'})</text>
+        </name>
+      </place>
+      <place id="({'Approval', 'Submit Application'}, {'Initial Review'})">
+        <name>
+          <text>({'Approval', 'Submit Application'}, {'Initial Review'})</text>
+        </name>
+      </place>
+      <place id="({'Expert Review'}, {'Approval', 'Rejection'})">
+        <name>
+          <text>({'Expert Review'}, {'Approval', 'Rejection'})</text>
+        </name>
+      </place>
+      <transition id="Submit Application">
+        <name>
+          <text>Submit Application</text>
+        </name>
+      </transition>
+      <transition id="Credit Check">
+        <name>
+          <text>Credit Check</text>
+        </name>
+      </transition>
+      <transition id="Expert Review">
+        <name>
+          <text>Expert Review</text>
+        </name>
+      </transition>
+      <transition id="Approval">
+        <name>
+          <text>Approval</text>
+        </name>
+      </transition>
+      <transition id="Initial Review">
+        <name>
+          <text>Initial Review</text>
+        </name>
+      </transition>
+      <transition id="Rejection">
+        <name>
+          <text>Rejection</text>
+        </name>
+      </transition>
+      <arc id="6204190080" source="Credit Check" target="({'Credit Check'}, {'Rejection'})"/>
+      <arc id="6204182784" source="({'Initial Review'}, {'Expert Review'})" target="Expert Review"/>
+      <arc id="6204182016" source="({'Submit Application'}, {'Credit Check'})" target="Credit Check"/>
+      <arc id="6204191232" source="Approval" target="({'Approval', 'Submit Application'}, {'Initial Review'})"/>
+      <arc id="6204180096" source="({'Expert Review'}, {'Approval', 'Rejection'})" target="Approval"/>
+      <arc id="6204192144" source="Initial Review" target="({'Initial Review'}, {'Credit Check'})"/>
+      <arc id="6204179088" source="Submit Application" target="({'Approval', 'Submit Application'}, {'Initial Review'})"/>
+      <arc id="6204189216" source="Approval" target="end"/>
+      <arc id="6204190752" source="Credit Check" target="({'Credit Check'}, {'Expert Review'})"/>
+      <arc id="6204183456" source="Initial Review" target="({'Initial Review'}, {'Expert Review'})"/>
+      <arc id="6204186912" source="Submit Application" target="({'Submit Application'}, {'Credit Check'})"/>
+      <arc id="6204186672" source="start" target="Submit Application"/>
+      <arc id="6204185904" source="Rejection" target="end"/>
+      <arc id="6204183600" source="({'Approval', 'Submit Application'}, {'Initial Review'})" target="Initial Review"/>
+      <arc id="6204180528" source="Expert Review" target="({'Expert Review'}, {'Approval', 'Rejection'})"/>
+      <arc id="6204186432" source="({'Credit Check'}, {'Expert Review'})" target="Expert Review"/>
+      <arc id="6204181584" source="({'Credit Check'}, {'Rejection'})" target="Rejection"/>
+      <arc id="6204182736" source="({'Initial Review'}, {'Credit Check'})" target="Credit Check"/>
+      <arc id="6204183648" source="({'Expert Review'}, {'Approval', 'Rejection'})" target="Rejection"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="end">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

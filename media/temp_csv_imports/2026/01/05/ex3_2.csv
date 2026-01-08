@@ -1,0 +1,66 @@
+case:concept:name,concept:name,time:timestamp,org:resource,loan_amount,outcome
+C001,Submit Application,2025-01-05 09:12:00,New,120000000.0,
+C001,Initial Review,2025-01-06 14:20:00,New,120000000.0,
+C001,Credit Check,2025-01-07 10:05:00,New,120000000.0,
+C001,Expert Review,2025-01-08 15:33:00,New,120000000.0,
+C001,Approval,2025-01-09 11:15:00,New,120000000.0,Approved
+C002,Submit Application,2025-01-05 09:45:00,Existing,80000000.0,
+C002,Initial Review,2025-01-06 11:00:00,Existing,80000000.0,
+C002,Credit Check,2025-01-07 12:10:00,Existing,80000000.0,
+C002,Approval,2025-01-08 09:45:00,Existing,80000000.0,Approved
+C003,Submit Application,2025-01-07 13:40:00,New,150000000.0,
+C003,Initial Review,2025-01-08 09:20:00,New,150000000.0,
+C003,Credit Check,2025-01-08 14:30:00,New,150000000.0,
+C003,Rejection,2025-01-09 16:40:00,New,150000000.0,Rejected
+C004,Submit Application,2025-01-06 10:25:00,Existing,, 
+C004,Initial Review,2025-01-07 08:15:00,Existing,, 
+C004,Credit Check,,Existing,90000000.0,
+C004,Expert Review,2025-01-09 14:25:00,Existing,90000000.0,
+C004,Approval,2025-01-10 09:40:00,Existing,90000000.0,Approved
+C005,Submit Application,2025-01-06 09:50:00,New,50000000.0,
+C005,Initial Review,2025-01-07 15:45:00,New,50000000.0,
+C005,Credit Check,2025-01-08 09:50:00,New,50000000.0,
+C005,Rejection,2025-01-09 10:15:00,New,50000000.0,Rejected
+C006,Submit Application,2025-01-05 11:25:00,Existing,100000000.0,
+C006,Initial Review,2025-01-06 13:10:00,Existing,100000000.0,
+C006,Credit Check,2025-01-07 10:20:00,Existing,100000000.0,
+C006,Expert Review,2025-01-08 13:40:00,Existing,100000000.0,
+C006,Approval,2025-01-09 15:25:00,Existing,100000000.0,Approved
+C007,Submit Application,2025-01-06 08:35:00,New,75000000.0,
+C007,Initial Review,2025-01-07 09:40:00,New,75000000.0,
+C007,Credit Check,2025-01-08 08:00:00,New,75000000.0,
+C007,Rejection,2025-01-09 17:00:00,New,75000000.0,Rejected
+C008,Submit Application,2025-01-07 10:15:00,Existing,88000000.0,
+C008,Initial Review,,Existing,88000000.0,
+C008,Credit Check,2025-01-09 09:40:00,Existing,88000000.0,
+C008,Approval,2025-01-10 11:20:00,Existing,88000000.0,Approved
+C009,Submit Application,2025-01-06 14:00:00,New,132000000.0,
+C009,Initial Review,2025-01-07 16:10:00,New,132000000.0,
+C009,Credit Check,2025-01-09 09:50:00,New,132000000.0,
+C009,Expert Review,2025-01-10 13:45:00,New,132000000.0,
+C009,Rejection,2025-01-11 10:25:00,New,132000000.0,Rejected
+C010,Submit Application,2025-01-05 09:10:00,Existing,92000000.0,
+C010,Initial Review,2025-01-06 14:20:00,Existing,92000000.0,
+C010,Credit Check,2025-01-07 09:50:00,Existing,92000000.0,
+C010,Approval,2025-01-08 12:30:00,Existing,92000000.0,Approved
+C011,Submit Application,2025-01-07 08:55:00,New,110000000.0,
+C011,Initial Review,2025-01-08 10:10:00,New,110000000.0,
+C011,Credit Check,2025-01-09 14:40:00,New,110000000.0,
+C011,Expert Review,2025-01-10 15:15:00,New,110000000.0,
+C011,Approval,2025-01-12 09:20:00,New,110000000.0,Approved
+C012,Submit Application,2025-01-06 11:30:00,Existing,78000000.0,
+C012,Initial Review,2025-01-07 10:05:00,Existing,78000000.0,
+C012,Credit Check,2025-01-08 11:40:00,Existing,78000000.0,
+C012,Rejection,2025-01-09 13:55:00,Existing,78000000.0,Rejected
+C013,Submit Application,2025-01-05 15:25:00,New,99000000.0,
+C013,Initial Review,2025-01-06 09:40:00,New,99000000.0,
+C013,Credit Check,2025-01-07 12:25:00,New,99000000.0,
+C013,Rejection,2025-01-08 14:10:00,New,99000000.0,Rejected
+C014,Submit Application,2025-01-08 09:00:00,Existing,65000000.0,
+C014,Initial Review,2025-01-09 08:55:00,Existing,65000000.0,
+C014,Credit Check,2025-01-09 14:30:00,Existing,65000000.0,
+C014,Approval,2025-01-10 10:15:00,Existing,65000000.0,Approved
+C015,Submit Application,2025-01-07 11:20:00,New,, 
+C015,Initial Review,2025-01-08 09:40:00,New,72000000.0,
+C015,Credit Check,2025-01-09 15:00:00,New,72000000.0,
+C015,Approval,2025-01-10 14:10:00,New,72000000.0,Approved
