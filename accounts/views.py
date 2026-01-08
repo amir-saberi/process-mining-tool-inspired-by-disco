@@ -37,6 +37,11 @@ def register_view(request):
             login(request, user)
             messages.success(request, 'ثبت‌نام با موفقیت انجام شد.')
             return redirect('dashboard')
+        else:
+            # If form has errors, display them
+            for field, errors in form.errors.items():
+                for error in errors:
+                    messages.error(request, f'{error}')
     else:
         form = RegisterForm()
     return render(request, 'accounts/register.html', {'form': form})
